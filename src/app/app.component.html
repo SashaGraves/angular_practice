@@ -1,2 +1,8 @@
 <h1>{{title}}</h1>
 <h2>First page</h2>
+
+<ul class="container">
+  <li *ngFor="let pokemon of pokemons">
+    <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+  </li>
+</ul>

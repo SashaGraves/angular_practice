@@ -1,56 +1,74 @@
-import { Pokemon } from "./components/pokemon.model";
+import { Pokemon } from "./pokemon.model";
 
-export const POKEMON: Pokemon[] = [
+export const POKEMONS: Pokemon[] = [
+  {
+    "name": "weedle",
+    "id": 13,
+    "damage": 1,
+  },
   {
     "name": "kakuna",
-    "id": 14
+    "id": 14,
+    "damage": 12,
   },
   {
     "name": "beedrill",
-    "id": 15
+    "id": 15,
+    "damage": 34,
   },
   {
     "name": "pidgey",
-    "id": 16
+    "id": 16,
+    "damage": 45,
   },
   {
     "name": "pidgeotto",
-    "id": 17
+    "id": 17,
+    "damage": 56,
   },
   {
     "name": "pidgeot",
-    "id": 18
+    "id": 18,
+    "damage": 67,
   },
   {
     "name": "rattata",
-    "id": 19
+    "id": 19,
+    "damage": 78,
   },
   {
     "name": "raticate",
-    "id": 20
+    "id": 20,
+    "damage": 34,
   },
   {
     "name": "spearow",
-    "id": 21
+    "id": 21,
+    "damage": 12,
   },
   {
     "name": "fearow",
-    "id": 22
+    "id": 22,
+    "damage": 45,
   },
   {
     "name": "ekans",
-    "id": 23
+    "id": 23,
+    "damage": 2,
   },
   {
     "name": "arbok",
-    "id": 24
+    "id": 24,
+    "damage": 11,
   },
   {
     "name": "pikachu",
-    "id": 25
+    "id": 25,
+    "damage": 23,
   },
   {
     "name": "raichu",
-    "id": 26
+    "id": 26,
+    "damage": 67,
   },
 ]
