@@ -1,8 +1,15 @@
 <h1>{{title}}</h1>
-<h2>First page</h2>
+
+<div>
+  <input type="radio" name="card-view" [(ngModel)]="cardView" value="{{list}}" id="list-view" />
+  <label for="list-view">List</label>
+  
+  <input type="radio" name="card-view" [(ngModel)]="cardView" value="{{deck}}" id="deck-view" />
+  <label>Deck</label>
+</div>
 
 <ul class="container">
   <li *ngFor="let pokemon of pokemons">
-    <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+    <app-pokemon-card [pokemon]="pokemon" [cardView]="cardView"></app-pokemon-card>
   </li>
 </ul>

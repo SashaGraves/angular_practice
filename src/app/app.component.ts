@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { POKEMONS } from './mock-pokemon';
+import { DECK, LIST } from '../consts';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,15 @@ import { POKEMONS } from './mock-pokemon';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @Input() cardView;
+  
+  constructor() {
+    this.cardView = 'deck';
+  }
+  
   title = 'Choose your fighter';
   
   pokemons = POKEMONS;
-  
-  onSwitch() {
-    
-  }
+  deck = DECK;
+  list = LIST;
 }

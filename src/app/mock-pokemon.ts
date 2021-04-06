@@ -34,12 +34,12 @@ export const POKEMONS: Pokemon[] = [
   {
     "name": "rattata",
     "id": 19,
-    "damage": 78,
+    "damage": 28,
   },
   {
     "name": "raticate",
     "id": 20,
-    "damage": 34,
+    "damage": 134,
   },
   {
     "name": "spearow",
@@ -54,12 +54,12 @@ export const POKEMONS: Pokemon[] = [
   {
     "name": "ekans",
     "id": 23,
-    "damage": 2,
+    "damage": 22,
   },
   {
     "name": "arbok",
     "id": 24,
-    "damage": 11,
+    "damage": 101,
   },
   {
     "name": "pikachu",

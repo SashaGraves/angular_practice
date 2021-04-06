@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { CATCH, LET_FREE } from '../../consts';
 
 @Component({
   selector: 'app-pokemon-card',
@@ -7,10 +8,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PokemonCardComponent implements OnInit {
   @Input() pokemon;
+  @Input() cardView;
+  buttonText = CATCH;
 
   constructor() { }
 
   ngOnInit(): void {
   }
   
+  onButtonClick() {
+    if (this.buttonText == CATCH) {
+      this.buttonText = LET_FREE;
+    } else {
+      this.buttonText = CATCH;
+    }
+  }
 }
